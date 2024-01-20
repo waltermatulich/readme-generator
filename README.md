@@ -1,3 +1,5 @@
+Copy and paste the link below in your web browser to see the tutorial on how I make this website. Thank you, cheers!
+
 chrome-extension://mmeijimgabbpbgpdklnllpncmdofkcpn/app.html#/files/bb5c05da-caf0-409b-y8d4-466696755d44
 
     #readme-generator
