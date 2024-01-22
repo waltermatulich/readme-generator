@@ -69,7 +69,7 @@ const init = async () => {
       const inquirerResponses = await inquirer.prompt(questions);
       console.log("Generating README.....");
       const markdownData = generateMarkdown(inquirerResponses);
-      writeToFile("README.md", markdownData);
+      writeToFile("Generated_README.md", markdownData);
     } catch (error) {
       console.error("Error during initialization:", error);
     }

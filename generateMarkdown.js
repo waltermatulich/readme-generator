@@ -30,44 +30,49 @@ function generateLicenseBadgeAndNotice(license) {
     return { badge, notice };
 }
 
+
+
 // Generating markdown data
 module.exports = function generateMarkdown(data) {
     // Generate license badge and notice based on the chosen license
     const { badge, notice } = generateLicenseBadgeAndNotice(data.license);
 
     return `
-    #${data.title}
+# ${data.title}
 
-    ${badge}
-    
-    ${data.license}
+${badge}
 
-    Description:
-    
-    ${data.description}
-    
-    Table of Contents:
-    
-    Installation:
-    
-    To install, run the following command⬇️
+## Description
 
-    ${data.installation}
+${data.description}
 
-    Usage:
-    ${data.usage}
+## Table of Contents:
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Test](#test)
+- [Contacts](#contacts)
+## Installation
 
-    Contributing:
-    ${data.contributing}
+### To install, run the following command⬇️
 
-    Test:
+${data.installation}
 
-    ${data.test}
+## Usage:
+${data.usage}
 
-    ${notice}
+## Contributing:
+${data.contributing}
 
-    If you have questions, please feel free to contact me!
-    - Email: @${data.email}
-    - GitHub Account: ${data.github} https://github.com/waltermatulich
-    `;
+## Test:
+
+${data.test}
+
+${notice}
+
+## Contacts
+### If you have questions, please feel free to contact me!
+##### Email: @${data.email}
+##### GitHub Account: ${data.github} https://github.com/waltermatulich
+`;
 };
